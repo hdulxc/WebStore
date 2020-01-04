@@ -1,0 +1,60 @@
+
+<html>
+<head>
+    <title>比优商城:我的订单</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <ul >
+        <li class="left"><a href="Home.jsp">商城主页</a></li>
+        <li class="left"><a href="Choice.jsp">比优精选</a></li>
+        <li class="left"><a href="List.jsp">推荐货单</a></li>
+        <li class="left"><a href="Reward.jsp">用户福利</a></li>
+        <li class="right" ><a href="index.jsp">退出登录</a></li>
+        <li class="right" ><a class="active" href="Order.jsp">查看订单</a></li>
+        <li class="right" ><a href="Centre.jsp">个人主页</a></li>
+    </ul>
+</div>
+
+<div class="box">
+    <center><font face="黑体" size="6" color="red"></font></center>
+    <table width="100%" border="0" align="center">
+        <tr bgcolor="#db7093" align="center">
+            <td width="10%">商品名</td>
+            <td width="10%">单价</td>
+            <td width="10%">总价</td>
+            <td width="10%">评分</td>
+            <td width="55%">评价</td>
+            <td width="5%"></td>
+        </tr>
+        <tr bgcolor="white">
+            <td valign="top">
+                <%=account[0]%><br>
+                <%=account[1]%><br>
+            </td>
+            <td valign="top">
+                <%=price[0]%><br>
+                <%=price[1]%><br>
+            </td>
+            <td valign="top">
+                <%=total[0]%><br>
+                <%=total[1]%><br>
+            </td>
+            <td valign="top">
+                <%=pingfen[0]%><br>
+                <%=pingfen[1]%><br>
+            </td>
+            <td valign="top">
+                <%=pingjia[0]%><br>
+                <%=pingjia[1]%><br>
+            </td>
+            <td valign="top">
+                <br><a href="Pfpj.html" title="">评分评价</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

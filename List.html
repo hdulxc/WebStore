@@ -1,0 +1,61 @@
+
+<html>
+<head>
+    <title>比优商城：推荐货单</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <ul >
+        <li class="left"><a href="Home.jsp">商城主页</a></li>
+        <li class="left"><a href="Choice.jsp">比优精选</a></li>
+        <li class="left"><a class="active" href="List.jsp">推荐货单</a></li>
+        <li class="left"><a href="Reward.jsp">用户福利</a></li>
+        <li class="right" ><a href="index.jsp">退出登录</a></li>
+        <li class="right" ><a href="Order.jsp">查看订单</a></li>
+        <li class="right" ><a href="Centre.jsp">个人主页</a></li>
+
+    </ul>
+</div>
+<div class="box">
+    <table width="100%" border="0" align="center">
+        <tr bgcolor="#db7093" align="center">
+            <td width="10%">货单类型</td>
+            <td width="10%">创建者</td>
+            <td width="10%">点赞</td>
+            <td width="10%">收藏</td>
+            <td width="55%">内容</td>
+            <td width="5%"></td>
+        </tr>
+        <tr bgcolor="white">
+            <td valign="top">
+                <%=type[0]%><br>
+                <%=type[1]%><br>
+            </td>
+            <td valign="top">
+
+                <%=creater[0]%><br>
+                <%=creater[1]%><br>
+            </td>
+            <td valign="top">
+
+                <%=dianzan[0]%><br>
+                <%=dianzan[1]%><br>
+            </td>
+            <td valign="top">
+                <%=shoucang[0]%><br>
+                <%=shoucang[1]%><br>
+            </td>
+            <td valign="top">
+                <%=neirong[0]%><br>
+                <%=neirong[1]%><br>
+            </td>
+            <td valign="top">
+                <a href="aaa.jsp" title="">点赞</a> <a href="aaa.jsp" title="">收藏</a><br>
+                <a href="aaa.jsp" title="">点赞</a> <a href="aaa.jsp" title="">收藏</a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

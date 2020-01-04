@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>比优商城</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body  onload="checkCookie()">
+<script>
+    function setCookie(cname,cvalue,exdays){
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname+"="+cvalue+"; "+expires;
+    }
+    function getCookie(cname){
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+        }
+        return "";
+    }
+    function checkCookie(){
+        var user=getCookie("username");
+        if (user!=""){
+            alert("欢迎 " + user + " ");
+        }
+        else {
+            user = prompt("请输入你的名字:","");
+            if (user!="" && user!=null){
+                setCookie("username",user,30);
+            }
+        }
+    }
+</script>
+<div class="header">
+    <ul >
+        <li class="left"><a class="active" href="Home.jsp">商城主页</a></li>
+        <li class="left"><a href="Choice.jsp">比优精选</a></li>
+        <li class="left"><a href="List.html">推荐货单</a></li>
+        <li class="left"><a href="Reward.jsp">用户福利</a></li>
+        <li class="right" ><a href="index.jsp">退出登录</a></li>
+        <li class="right" ><a href="Order.html">查看订单</a></li>
+        <li class="right" ><a href="Centre.html">个人主页</a></li>
+    </ul>
+</div>
+
+<div class="box">
+    <div class="boxleft">
+        <ul>
+            <li><a href="#home"><i class="web-font">手机</i></a></li>
+            <li><a href="#news"><i class="web-font">平板电脑</i></a></li>
+            <li><a href="#contact"><i class="web-font">笔记本电脑</i></a></li>
+            <li><a href="#contact"><i class="web-font">生活家电</i></a></li>
+            <li><a href="#contact"><i class="web-font">大家电</i></a></li>
+            <li><a href="#contact"><i class="web-font">休闲家电</i></a></li>
+            <li><a href="#contact"><i class="web-font">个人家电</i></a></li>
+            <li><a href="#contact"><i class="web-font">相机摄影</i></a></li>
+            <li><a href="#contact"><i class="web-font">数码配件</i></a></li>
+        </ul>
+    </div>
+
+    <div class="boxright">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/lrtk.js"></script>
+        <!-- 代码开始 -->
+        <div class="pbox">
+            <div class="picbox">
+                <ul class="piclist mainlist" style="background-color: white">
+                    <li><a href="XMbuy.html" target="_blank"><img src="images/XM.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="SSbuy.jsp" target="_blank"><img src="images/SS.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="ZPbuy.jsp" target="_blank"><img src="images/ZP.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="PGbuy.jsp" target="_blank"><img src="images/PG.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="XMbuy.html" target="_blank"><img src="images/XM.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="SSbuy.jsp" target="_blank"><img src="images/SS.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="ZPbuy.jsp" target="_blank"><img src="images/ZP.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                    <li><a href="PGbuy.jsp" target="_blank"><img src="images/PG.png" style="border:none; width: 180px;height: 100px;"/></a></li>
+                </ul>
+                <ul class="piclist swaplist"></ul>
+            </div>
+            <div class="og_prev"></div>
+            <div class="og_next"></div>
+        </div>
+
+        <div class='card-holder'>
+            <div class='card-wrapper'>
+                <a href='#'>
+                    <div class='card bg-01'>
+                        <span class='card-content'>更多</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

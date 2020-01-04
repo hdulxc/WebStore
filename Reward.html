@@ -1,0 +1,74 @@
+<%--
+Created by IntelliJ IDEA.
+User: 10915
+Date: 2019/10/27
+Time: 14:16
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>比优商城：用户福利</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        overflow: hidden;
+        background-color: darkorange;
+    }
+
+    li {
+        float: left;
+    }
+    li.right{
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #4CAF50;
+    }
+    li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+<div class="header">
+    <ul >
+        <li class="left"><a href="Home.jsp">商城主页</a></li>
+        <li class="left"><a href="Choice.jsp">比优精选</a></li>
+        <li class="left"><a href="List.jsp">推荐货单</a></li>
+        <li class="left"><a class="active" href="Reward.jsp">用户福利</a></li>
+        <li class="right" ><a href="#about">购物车</a></li>
+        <li class="right" ><a href="#about">查看订单</a></li>
+        <li class="right" ><a href="#about">个人主页</a></li>
+    </ul>
+</div>
+<div class="box">
+    <div class="boxleft" style="width: 500px;height: 500px;">
+        <img src="images/ZP.png">
+    </div>
+    <div class="boxright" style="width: 1000px">
+        <p>福利赠品：锤子手机（老年机）</p>
+        <p>规格参数：</p><br><br><br>
+        <p>需要赠币：500<p>
+        <form action="Succeed.html" name="form_index" method="post">
+            <input type="submit" value="使用赠币购买" style="width: 50%">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

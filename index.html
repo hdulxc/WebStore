@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>比优商城:登录</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <img class="imgcentre" src="images/biyoustore1.png" >
+</div>
+<div class="box">
+    <div class="divleft">
+        <img class="imgright" src="images/比优商城.png" style="width: 100%">
+    </div>
+    <div class="divleft" style="width: 40%">
+        <form action="Home.html" name="form_index" onsubmit="return clientCheck();" method="post">
+            <label for="name">用户名</label>
+            <input type="text" id="name" name="account" placeholder="请输入用户名...">
+            <label for="password">密码</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码...">
+            <input type="submit" value="登录">
+        </form>
+        <script type="text/javascript" >
+            function clientCheck(){
+                var name = document.getElementById("name").value;
+                if(name ==  null || name == ''){
+                    alert("用户名不能为空");
+                    return false;
+                }
+                return true;}
+
+        </script>
+        <form action="Register.html">
+            <input type="submit" value="注册">
+        </form>
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

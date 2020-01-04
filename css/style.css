@@ -1,0 +1,218 @@
+.header{
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.box{
+    position:absolute;
+    top:15%;
+    width:80%;
+    height:80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.boxleft{
+    position:absolute;
+    width:10%;
+    height:100%;
+    float:left;
+    display: flex;
+}
+.boxright{
+    width:90%;
+    height:100%;
+    float:right;
+}
+.boxbottom{
+    position:absolute;
+    width:80%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-top:600px;
+}
+.sidebar {
+    position: absolute;
+    left: 0; top: 72px; bottom: 0;
+    width: 178px;
+}
+.imgcentre {
+    display: block;
+    margin: 0 auto;
+}
+.imgright {
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+
+.divleft {
+    width:50%;
+    height:300px;
+    float:left;
+    border-radius: 5px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: darkorange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #4CAF50;
+}
+p{
+    text-decoration:underline;
+    font-size:28px;
+}
+
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+li.left {
+    float: left;
+}
+li.right{
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #4CAF50;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkorange;
+}
+
+.card-holder {
+    position: fixed;
+    width: 0px;
+    overflow: visible;
+    right: 0px;
+}
+
+.card-wrapper {
+    display: inline-block;
+    float: right;
+    clear: both;
+}
+
+.card {
+    position: relative;
+    left: 100px;
+    padding: 7px 32px 7px 64px;
+    margin-top: 15px;
+    x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    transition: all 0.3s ease-in-out 0.1s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    position: relative;
+    left: 100%;
+    margin-left: -100px;
+    box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    left: -15px;
+}
+
+.bg-01 {
+    background: #977e78;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_8twqmc3v5dg.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_8twqmc3v5dg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_8twqmc3v5dg.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_8twqmc3v5dg.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_8twqmc3v5dg.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_8twqmc3v5dg.svg#杨任东竹石体-Bold') format('svg'); /* iOS 4.1- */
+}
+.web-font{
+    font-family:"webfont" !important;
+    font-size:24px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,ul,li{ padding:0; margin:0;}
+ul,li{ list-style:none;}
+a{ color:#6cf;}
+a:hover{ color:#84B263;}
+.pbox{ width:980px; margin:0 auto; position:relative; overflow:hidden; _height:100%;}
+.picbox{ width:980px; height:115px; overflow:hidden; position:relative;}
+.piclist{ height:115px;position:absolute; left:0px; top:0px}
+.piclist li{ background:#eee; margin-right:20px; padding:5px; float:left;}
+.swaplist{ position:absolute; left:-3000px; top:0px}
+.og_prev,.og_next{ width:30px; height:50px; background:url(../images/icon.png) no-repeat; background:url(../images/icon_ie6.png) no-repeat\9; position:absolute; top:33px; z-index:99; cursor:pointer;filter:alpha(opacity=70); opacity:0.7;}
+.og_prev{ background-position:0 -60px; left:4px;}
+.og_next{ background-position:0 0; right:4px;}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
